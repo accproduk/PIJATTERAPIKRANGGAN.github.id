@@ -1,0 +1,232 @@
+/* Mengatur font dan background dasar halaman */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    /* Warna dasar hijau natural */
+    background-color: #e8f5e9;
+
+    /* Pola natural lembut (seperti daun/alam) */
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(46,125,50,0.08) 0%, transparent 40%),
+        radial-gradient(circle at 80% 30%, rgba(102,187,106,0.08) 0%, transparent 45%),
+        radial-gradient(circle at 50% 80%, rgba(76,175,80,0.08) 0%, transparent 50%);
+
+    color: #2e3d2f;
+}
+
+    
+
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fbf9; 
+    color: #333;
+}
+
+/* Styling Header */
+header {
+    header {
+    background: linear-gradient(135deg, #2e7d32, #81c784);
+    color: #ffffff;
+    padding: 60px 30px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+    
+    background-color: #2e7d32; /* Hijau Terapi */
+    color: white;
+    padding: 60px 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header p {
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+header h2
+{
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-transform: center;
+}
+
+header p {
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* Styling Foto Om Donny */
+header img {
+    margin-top: 20px;
+    border-radius: 50%; /* Bulat */
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.1); /* Sedikit membesar saat kursor di atasnya */
+}
+/* Reset margin dan padding bawaan browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9; /* Warna latar belakang lembut */
+    line-height: 1.6;
+    color: #333;
+}
+
+main {
+    main, section {
+    background-color: rgba(255,255,255,0.95);
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+
+
+
+    background: #ffffff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px; /* Sudut melengkung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Efek bayangan halus */
+}
+
+section {
+    text-align: center; /* Meratakan konten ke tengah */
+}
+
+img {
+    max-width: 100%; /* Gambar tidak akan melebihi lebar kontainer */
+    height: auto;    /* Menjaga proporsi gambar */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    object-fit: cover; /* Memastikan gambar terpotong rapi jika rasio berbeda */
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Garis dekorasi di bawah judul */
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #66bb6a;
+}
+
+ 
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto; /* Menengahkan teks paragraf */
+}
+
+/* Responsif untuk layar HP */
+@media (max-width: 600px) {
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+/* Container Section Hubungi Kami */
+section {
+    background-color: #ffffff; /* Mengubah background agar lebih bersih */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Penataan Paragraf */
+section p {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Menebalkan Label (WhatsApp & Alamat) */
+section p strong {
+    color: #2c3e50;
+    display: block; /* Membuat label berada di baris sendiri agar rapi */
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* Style Tombol WhatsApp */
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 50px; /* Membuat tombol lonjong/rounded */
+    font-weight: bold;
+    margin-top: 15px;
+    transition: all 0.3s ease; /* Efek transisi halus */
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+/* Efek saat tombol diarahkan kursor (Hover) */
+.btn-whatsapp:hover {
+    background-color: #128c7e; /* Warna hijau lebih gelap */
+    transform: translateY(-3px); /* Tombol sedikit terangkat */
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+    section {
+        padding: 20px;
+    }
+    
+    .btn-whatsapp {
+        width: 100%; /* Tombol memenuhi lebar layar di HP */
+    }
+}
